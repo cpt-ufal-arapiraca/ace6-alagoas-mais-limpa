@@ -1,9 +1,9 @@
-
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Inicio from './pages/Inicio';
-import Administrador from './pages/Administrador';
+import Login from './pages/Login';
 import Visitante from './pages/Visitante';
+import SignUp from './pages/Signup';
 
 
 function Router() {
@@ -11,8 +11,9 @@ function Router() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Inicio />} />
-        <Route path="/administrador" element={<Administrador />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/visitante" element={<Visitante/>} />
+        <Route path="/criarConta" element={<SignUp/>} />
       </Routes>
     </BrowserRouter>
   );

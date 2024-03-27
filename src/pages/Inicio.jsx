@@ -11,7 +11,7 @@ export default function Inicio() {
         <>
             <h1>Bem vindo(a) ao Alagoas Mais Limpa!</h1>
             <button onClick={() => redirecionarParaRota('/visitante')}>Sou visitante</button>
-            <button onClick={() => redirecionarParaRota('/administrador')}>Sou Administrador</button>
+            <button onClick={() => redirecionarParaRota('/login')}>Sou Administrador</button>
         </>
     );
 }
