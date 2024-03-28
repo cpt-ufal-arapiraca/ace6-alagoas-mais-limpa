@@ -24,9 +24,12 @@ O que você precisa para instalar o software e como congelá-lo?
  ```
 baixe o instalador do Node.js para Windows no site oficial (https://nodejs.org/).
 ´´´
+
 ´´´
 Execute o instalador e segua as instruções de instalação padrão.
 ´´´
+
+
 ´´´
 Após a instalação, verifique se o Node.js e o npm estão instalados corretamente executando node -v e npm -v no prompt de comando do Windows.
 ´´´
@@ -39,10 +42,14 @@ Após a instalação, verifique se o Node.js e o npm estão instalados corretame
 ```
 sudo apt-get update
 ```
+
 ```
 sudo apt-get install nodejs
 ```
+
+
 Instalando as dependências:
+
 
 Após clonar o repositório para o seu ambiente local, navegue até o diretório do projeto e execute o seguinte comando para instalar as dependências:
 
@@ -55,8 +62,8 @@ Depois que todas as dependências forem instaladas com sucesso, você pode inici
 
 ```
 npm run dev
-
 ```
+
 Acesse a url 
 
 
