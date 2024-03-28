@@ -21,7 +21,7 @@ O que você precisa para instalar o software e como congelá-lo?
 
  No windows: 
  
- ```
+´´´
 baixe o instalador do Node.js para Windows no site oficial (https://nodejs.org/).
 ´´´
 
@@ -55,8 +55,9 @@ Após clonar o repositório para o seu ambiente local, navegue até o diretório
 
 ```
 npm i
-
 ```
+
+
 Depois que todas as dependências forem instaladas com sucesso, você pode iniciar o servidor de desenvolvimento usando o seguinte comando:
 
 
