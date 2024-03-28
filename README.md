@@ -21,19 +21,19 @@ O que você precisa para instalar o software e como congelá-lo?
 
  No windows: 
  
-```
+
 baixe o instalador do Node.js para Windows no site oficial (https://nodejs.org/).
-```
 
 
-```
+
+
 Execute o instalador e segua as instruções de instalação padrão.
-```
 
 
-```
+
+
 Após a instalação, verifique se o Node.js e o npm estão instalados corretamente executando node -v e npm -v no prompt de comando do Windows.
-```
+
 
 
 
@@ -70,9 +70,12 @@ Acesse a url
 
 
 
+
 ### Backend
 
 Em construção
+
+
 
 
 
