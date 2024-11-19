@@ -1,0 +1,341 @@
+<!DOCTYPE html> 
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alagoas Mais Limpa - Promovendo a limpeza e conservação do meio ambiente em Alagoas.">
+    <title>Alagoas Mais Limpa - Ecopontos e Notícias</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #e0f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #0277bd;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1000px;
+            margin: 30px auto;
+            background-color: #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: transform 0.2s;
+        }
+
+        main:hover {
+            transform: translateY(-2px);
+        }
+
+        h2 {
+            color: #0277bd;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input, textarea, select {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 100%;
+            transition: border 0.2s;
+        }
+
+        input:focus, textarea:focus {
+            border: 1px solid #0288d1;
+            outline: none;
+        }
+
+        button {
+            background-color: #0288d1;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        button:hover {
+            background-color: #01579b;
+        }
+
+        .section {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #f1f8e9;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #0277bd;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 50px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        ul li a {
+            color: #0277bd;
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilo do modal de login */
+        #loginModal {
+            display: none; /* Mudei para 'none' por padrão */
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+        }
+
+        .login-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px;
+            width: 100%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+        .close-btn:hover {
+            background-color: #c62828;
+        }
+
+        #login-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        #login-form input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .register-link {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .register-link a {
+            color: #0277bd;
+            text-decoration: none;
+        }
+
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            header, footer {
+                text-align: center;
+            }
+
+            nav {
+                flex-direction: column;
+                margin: 0;
+            }
+
+            nav a {
+                margin: 5px 0;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Modal de Login -->
+    <div id="loginModal">
+        <div class="login-container">
+            <button class="close-btn" id="closeLoginModal">&times;</button>
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+            <div class="register-link">
+                <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <h1>Alagoas Mais Limpa</h1>
+        <nav>
+            <a href="#ecopontos">Ecopontos</a>
+            <a href="#noticias">Notícias</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção de Ecopontos -->
+        <section class="section" id="ecopontos">
+            <h2>Ecopontos</h2>
+            <p>Escolha um local e veja a geolocalização:</p>
+            <select id="ecopointSelect">
+                <option value="">Selecione um Ecoponto</option>
+                <option value="cavaco">Rua José Luís de Almeida - Cavaco</option>
+                <option value="primavera">Rua Engenheiro Camilo Collier - Primavera</option>
+                <option value="jardim">Rua Cabo Jeovane Pereira da Silva - Jardim Esperança</option>
+            </select>
+            <div>
+                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2683.825023349226!2d-37.56179621905176!3d-9.73880581542667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7bede387b9c8c85%3A0xe7b8aa3d7c1c072d!2sCemfra!5e0!3m2!1spt-BR!2sbr!4v1695147621146!5m2!1spt-BR!2sbr"></iframe>
+            </div>
+        </section>
+
+        <!-- Seção de Notícias -->
+        <section class="section" id="noticias">
+            <h2>Notícias</h2>
+            <ul>
+                <li><a href="#">Notícia 1: Resíduos e sua correta destinação.</a></li>
+                <li><a href="#">Notícia 2: A importância da reciclagem.</a></li>
+                <li><a href="#">Notícia 3: Como manter Alagoas limpa.</a></li>
+            </ul>
+        </section>
+
+        <!-- Seção Sobre o Projeto -->
+        <section class="section" id="sobre">
+            <h2>Sobre o Projeto</h2>
+            <p>Alagoas Mais Limpa é uma iniciativa que visa promover a preservação ambiental e a conscientização da população sobre a importância da limpeza urbana e do descarte correto de resíduos.</p>
+        </section>
+
+        <!-- Seção de Contato -->
+        <section class="section" id="contato">
+            <h2>Contato</h2>
+            <form>
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Mensagem" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Alagoas Mais Limpa. Todos os direitos reservados.</p>
+        <button id="openLoginModal">Login</button>
+    </footer>
+
+    <script>
+        const openLoginModal = document.getElementById('openLoginModal');
+        const closeLoginModal = document.getElementById('closeLoginModal');
+        const loginModal = document.getElementById('loginModal');
+
+        openLoginModal.onclick = function() {
+            loginModal.style.display = 'flex';
+        };
+
+        closeLoginModal.onclick = function() {
+            loginModal.style.display = 'none';
+        };
+
+        document.getElementById('ecopointSelect').addEventListener('change', function() {
+            const mapFrame = document.getElementById('map');
+            const selectedValue = this.value;
+
+            switch (selectedValue) {
+                case 'cavaco':
+                    mapFrame.src = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2683.825023349226!2d-37.56179621905176!3d-9.73880581542667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7bede387b9c8c85%3A0xe7b8aa3d7c1c072d!2sCemfra!5e0!3m2!1spt-BR!2sbr!4v1695147621146!5m2!1spt-BR!2sbr';
+                    break;
+                case 'primavera':
+                    mapFrame.src = 'URL_DO_MAPA_PRIMAVERA'; // Substitua com o URL do mapa correto
+                    break;
+                case 'jardim':
+                    mapFrame.src = 'URL_DO_MAPA_JARDIM'; // Substitua com o URL do mapa correto
+                    break;
+                default:
+                    mapFrame.src = '';
+                    break;
+            }
+        });
+    </script>
+</body>
+
+</html>
