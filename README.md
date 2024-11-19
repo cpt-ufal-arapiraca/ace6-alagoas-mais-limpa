@@ -31,22 +31,27 @@ Este projeto utiliza as seguintes tecnologias e ferramentas:
 - **Python (planejado)**: Planeja-se usar Python para integrar o backend.
 
 ## 🧩 Como Rodar o Projeto
-Siga os passos abaixo para executar o projeto localmente:
+Aqui está a seção revisada e formatada para o README:
 
-Clone este repositório:
+---
 
-bash
-Copiar código
-git clone https://github.com/seuusuario/alagoas-mais-limpa.git  
-Acesse o diretório do projeto:
+## 🧩 Como Executar o Projeto Localmente  
 
-bash
-Copiar código
-cd alagoas-mais-limpa  
-Abra o arquivo index.html no navegador:
+Siga os passos abaixo para rodar o projeto em sua máquina:  
 
-O projeto roda diretamente no navegador, sem necessidade de instalação de dependências por enquanto.
+1. **Clone este repositório:**  
+   ```bash  
+   git clone https://github.com/seuusuario/alagoas-mais-limpa.git  
+   ```  
 
+2. **Acesse o diretório do projeto:**  
+   ```bash  
+   cd alagoas-mais-limpa  
+   ```  
+
+3. **Abra o arquivo `index.html` no navegador:**  
+   - O projeto roda diretamente no navegador e não requer instalação de dependências neste momento.
+     
 ## 📌 Planejamento Futuro
 Integração com Python e Flask/Django para funcionalidades de backend.
 Banco de Dados: Persistência de dados de usuários e ecopontos.
