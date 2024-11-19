@@ -3,10 +3,10 @@
 Alagoas Mais Limpa é um projeto dedicado à conscientização ambiental, promoção de ações de limpeza e incentivo ao descarte adequado de resíduos no estado de Alagoas, Brasil. Por meio deste site, os usuários podem localizar ecopontos e acessar notícias relacionadas à sustentabilidade ambiental.
 
 ## 🚀 Funcionalidades
-Ecopontos: Encontre ecopontos em Alagoas, com mapas interativos fornecidos pela Google Maps API.
-Notícias: Acompanhe as principais notícias sobre sustentabilidade, gestão de resíduos e práticas ambientais em Alagoas.
-Login (em desenvolvimento): Sistema amigável para autenticação de usuários, incluindo registro para novos acessos.
-Design Responsivo: Compatível com desktops e dispositivos móveis.
+1. Ecopontos: Encontre ecopontos em Alagoas, com mapas interativos fornecidos pela Google Maps API.
+2. Notícias: Acompanhe as principais notícias sobre sustentabilidade, gestão de resíduos e práticas ambientais em Alagoas.
+3. Login (em desenvolvimento): Sistema amigável para autenticação de usuários, incluindo registro para novos acessos.
+4. Design Responsivo: Compatível com desktops e dispositivos móveis.
 
 ## 📖 Seções
 1. Ecopontos
