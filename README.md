@@ -31,9 +31,6 @@ Este projeto utiliza as seguintes tecnologias e ferramentas:
 - **Python (planejado)**: Planeja-se usar Python para integrar o backend.
 
 ## 🧩 Como Rodar o Projeto
-Aqui está a seção revisada e formatada para o README:
-
----
 
 ## 🧩 Como Executar o Projeto Localmente  
 
@@ -65,6 +62,7 @@ Mencione todos aqueles que ajudaram a levantar o projeto desde o início
 *  ** Maria Izabel** - * Documentação * - [ btwbel] ( https://github.com/btwbel)
 *  ** Maria Rikele ** - * Documentação * - [ mrikele] ( https://github.com/mrikele )
 *  ** Maria Vitória ** - * Desenvolvedora * - [ m-vitoria] ( https://github.com/m-vitoria )
+*  ** Josué Messias ** - * Desenvolvedor * - .[josuecreates] ( https://github.com/josuecreates ) 
 
 
 Você também pode ver a lista de todos os [ colaboradores ] ( https://github.com/usuario/projeto/colaboradores ) que participaram deste projeto.
