@@ -21,14 +21,14 @@ Acesse conteúdos restritos por meio de um sistema de login simples. O modal de 
 ## 🛠️ Tecnologias Utilizadas
 Este projeto utiliza as seguintes tecnologias e ferramentas:
 
-HTML5: Estruturação do conteúdo.
-CSS3: Estilização e design responsivo com Flexbox e Grid.
-JavaScript: Funcionalidades dinâmicas, como o modal de login.
-Google Maps API: Integração para mapas interativos.
-jQuery: Facilita a manipulação do DOM e interações dinâmicas.
-Font Awesome: Ícones para redes sociais e elementos interativos.
-Bootstrap 4: Layout responsivo e componentes prontos para UI.
-Python (planejado): Planeja-se usar Python para integrar o backend.
+- **HTML5**: Estruturação do conteúdo.  
+- **CSS3**: Estilização e design responsivo com Flexbox e Grid.  
+- **JavaScript**: Funcionalidades dinâmicas, como o modal de login.  
+- **Google Maps API**: Integração para mapas interativos.  
+- **jQuery**: Facilita a manipulação do DOM e interações dinâmicas.  
+- **Font Awesome**: Ícones para redes sociais e elementos interativos.  
+- **Bootstrap 4**: Layout responsivo e componentes prontos para UI.  
+- **Python (planejado)**: Planeja-se usar Python para integrar o backend.
 
 ## 🧩 Como Rodar o Projeto
 Siga os passos abaixo para executar o projeto localmente:
