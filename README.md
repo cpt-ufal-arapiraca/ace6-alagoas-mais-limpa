@@ -1,127 +1,56 @@
-# Alagoas Mais Limpa
-
-O sistema em questão é um site com um sistema de pontos de coleta acoplado, que tem como objetivo divulgar as ações realizadas pelo projeto, tanto na própria universidade, quanto na comunidade. Além disso, também objetiva divulgar pontos de coleta de determinados resíduos etc.  É uma ferramenta que permite o conhecimento detalhado de pontos de coleta e o propósito da reciclagem desse resíduo, além de divulgar as ações já realizadas, dando mais reconhecimento para o projeto. O sistema tem como principal propósito ampliar a divulgação e facilitar a coleta de resíduos de difícil descarte, ajudando a comunidade geral e a comunidade acadêmica a conhecer mais sobre o processo de reciclagem, divulgando pontos de coleta, tornando públicas as ações, o que consequentemente ajuda o meio ambiente. 
-
-## 🚀 Começando
-
-Estas instruções permitirão que você obtenha uma cópia do projeto em operação em sua máquina local para fins de desenvolvimento e teste.
-
-Consulte **[Implantação](#-implanta%C3%A7%C3%A3o)** para saber como implantar o projeto.
-
-### 📋 Pré-requisitos
-
-O que você precisa para instalar o software e como congelá-lo?
-
-
-### 🔧 Instalação
-
-### Front end
-
-1- instalar o node
-
- No windows: 
- 
-
-baixe o instalador do Node.js para Windows no site oficial (https://nodejs.org/).
-
-
-
-
-Execute o instalador e segua as instruções de instalação padrão.
-
-
-
-
-Após a instalação, verifique se o Node.js e o npm estão instalados corretamente executando node -v e npm -v no prompt de comando do Windows.
-
-
-
-
- No linux :
-
- 
-```
-sudo apt-get update
-```
-
-```
-sudo apt-get install nodejs
-```
-
-
-Instalando as dependências:
-
-
-Após clonar o repositório para o seu ambiente local, navegue até o diretório do projeto e execute o seguinte comando para instalar as dependências:
-
-```
-npm i
-```
-
-
-Depois que todas as dependências forem instaladas com sucesso, você pode iniciar o servidor de desenvolvimento usando o seguinte comando:
-
-
-```
-npm run dev
-```
-
-Acesse a url 
-
-
-
-
-### Backend
-
-Em construção
-
-
-
-
-
-
-
-Termine com um exemplo de como obter dados do sistema ou como usá-los para uma pequena demonstração.
-
-## ⚙️ Executando os testes
-
-Explicar como executar os testes automatizados para este sistema.
-
-### 🔩 Analise os testes de ponta a ponta
-
-Explique que eles verificam esses testes e porquê.
-
-```
-Dar exemplos
-```
-
-### ⌨️ E testes de estilo de acordo
-
-Explique que eles verificam esses testes e porquê.
-
-```
-Dar exemplos
-```
-
-## 📦 Implantação
-
-Adicione notas adicionais sobre como implantar isso em um sistema ativo
-
-## 🛠️ Construído com
-
-Mencione as ferramentas que você usou para criar seu projeto
-
-*  [ React ] ( https://react.dev/) – O framework web usado
-*  [ npm ] (https://www.npmjs.com/)  - Gerente de Dependência
-*  [ ROMA ] ( https://rometools.github.io/rome/ ) - Usado para gerar RSS
-
-## 🖇️ Colaborando
-
-Por favor, leia o [ COLABORACAO.md ] ( https://gist.github.com/usuario/linkParaInfoSobreContribuicoes ) para obter detalhes sobre nosso código de conduta e o processo para nos enviar pedidos de solicitação.
-
-## 📌 Versão
-
-Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as versões disponíveis, observe as [tags neste repositório](https://github.com/suas/tags/do/projeto).
+## Alagoas Mais Limpa - Ecopontos e Notícias 🌿
+
+Alagoas Mais Limpa é um projeto dedicado à conscientização ambiental, promoção de ações de limpeza e incentivo ao descarte adequado de resíduos no estado de Alagoas, Brasil. Por meio deste site, os usuários podem localizar ecopontos e acessar notícias relacionadas à sustentabilidade ambiental.
+
+## 🚀 Funcionalidades
+Ecopontos: Encontre ecopontos em Alagoas, com mapas interativos fornecidos pela Google Maps API.
+Notícias: Acompanhe as principais notícias sobre sustentabilidade, gestão de resíduos e práticas ambientais em Alagoas.
+Login (em desenvolvimento): Sistema amigável para autenticação de usuários, incluindo registro para novos acessos.
+Design Responsivo: Compatível com desktops e dispositivos móveis.
+
+## 📖 Seções
+1. Ecopontos
+Descubra ecopontos para reciclagem e descarte adequado de resíduos em várias localidades de Alagoas. Cada ecoponto está mapeado para facilitar a navegação.
+
+2. Notícias
+Leia artigos recentes sobre práticas ambientais, gestão de resíduos e ações sustentáveis. As notícias são curadas de fontes confiáveis, como grandes jornais e a Universidade Federal de Alagoas (UFAL).
+
+3. Login (em desenvolvimento)
+Acesse conteúdos restritos por meio de um sistema de login simples. O modal de login também oferece opção de cadastro para novos usuários.
+
+## 🛠️ Tecnologias Utilizadas
+Este projeto utiliza as seguintes tecnologias e ferramentas:
+
+HTML5: Estruturação do conteúdo.
+CSS3: Estilização e design responsivo com Flexbox e Grid.
+JavaScript: Funcionalidades dinâmicas, como o modal de login.
+Google Maps API: Integração para mapas interativos.
+jQuery: Facilita a manipulação do DOM e interações dinâmicas.
+Font Awesome: Ícones para redes sociais e elementos interativos.
+Bootstrap 4: Layout responsivo e componentes prontos para UI.
+Python (planejado): Planeja-se usar Python para integrar o backend.
+
+## 🧩 Como Rodar o Projeto
+Siga os passos abaixo para executar o projeto localmente:
+
+Clone este repositório:
+
+bash
+Copiar código
+git clone https://github.com/seuusuario/alagoas-mais-limpa.git  
+Acesse o diretório do projeto:
+
+bash
+Copiar código
+cd alagoas-mais-limpa  
+Abra o arquivo index.html no navegador:
+
+O projeto roda diretamente no navegador, sem necessidade de instalação de dependências por enquanto.
+
+## 📌 Planejamento Futuro
+Integração com Python e Flask/Django para funcionalidades de backend.
+Banco de Dados: Persistência de dados de usuários e ecopontos.
+Sistema de Notícias Dinâmico: Atualização automática de notícias com APIs de fontes confiáveis.
 
 ## ✒️ Autores
 
